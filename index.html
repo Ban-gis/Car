@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BanTal Car Rental</title>
+  <link rel="stylesheet" href="style.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+  <div class="logo">BanTal</div>
+
+  <nav class="nav">
+    <a href="#Home">Home</a>
+    <a href="#Explore">Explore cars</a>
+    <a href="#Help">Help center</a>
+    <a href="#">Pages</a>
+  </nav>
+
+  <div class="header-actions">
+    <div class="contact-info">
+      <span class="phone">8 800 234 56 78</span>
+      <span class="hours">Monday - Saturday, 9:00am - 6:00pm</span>
+    </div>
+    <button class="btn-primary">Explore cars</button>
+  </div>
+
+  <div class="hamburger" id="hamburger">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#Home">Home</a>
+    <a href="#Explore">Explore cars</a>
+    <a href="#Help">Help center</a>
+    <a href="#">Pages</a>
+    <button class="btn-primary">Explore cars</button>
+  </div>
+</header>
+
+
+ <section class="hero" id="Home">
+    <div class="hero-content">
+      <h2>The Easy Way to Takeover a Lease</h2>
+      <p>Live in New York, New Jersey, and Connecticut!</p>
+
+      <div class="search-box">
+        <input type="text" placeholder="Car, model, or brand" />
+        <input type="number" placeholder="Max monthly payment" />
+        <input type="number" placeholder="Make year" />
+        <button class="btn-primary">Search</button>
+      </div>
+    </div>
+  </section>
+
+
+
+
+<section class="featured" id="Explore">
+  <h2>Featured Cars</h2>
+  <div class="card-grid">
+    <!-- Repeat for 6 cars -->
+    <div class="car-card">
+      <img src="Toyota.avif" alt="Car" />
+      <div class="car-info">
+        <div class="car-header">
+          <h3>Toyota RAV4</h3>
+          <span class="car-year">2022</span>
+        </div>
+        <div class="car-specs">
+          <span><i class="fas fa-users"></i> 4 People</span>
+          <span><i class="fas fa-battery-half"></i> Hybrid</span>
+          <span><i class="fas fa-cogs"></i> Automatic</span>
+        </div>
+        <hr />
+        <div class="car-footer">
+          <span class="price">$440/month</span>
+          <button class="btn-secondary">Rent now</button>
+        </div>
+        <button class="heart-btn"><i class="fas fa-heart"></i></button>
+      </div>
+    </div>
+
+    <!-- Duplicate card with different data -->
+    <!-- Repeat the above card 5 more times, just change data and image -->
+    <!-- For brevity, we’ll just copy the same content 5 times -->
+    <!-- Add different images or car names if needed -->
+    <!-- You can customize each card data individually -->
+    <!-- Repeat Start -->
+    <div class="car-card">
+      <img src="Honda.jpg" alt="Car" />
+      <div class="car-info">
+        <div class="car-header">
+          <h3>Honda Civic</h3>
+          <span class="car-year">2021</span>
+        </div>
+        <div class="car-specs">
+          <span><i class="fas fa-users"></i> 5 People</span>
+          <span><i class="fas fa-gas-pump"></i> Gasoline</span>
+          <span><i class="fas fa-cogs"></i> Manual</span>
+        </div>
+        <hr />
+        <div class="car-footer">
+          <span class="price">$390/month</span>
+          <button class="btn-secondary">Rent now</button>
+        </div>
+        <button class="heart-btn"><i class="fas fa-heart"></i></button>
+      </div>
+    </div>
+
+    <!-- Repeat card 4 more times as needed... -->
+    <!-- Dummy duplicates for simplicity -->
+    <div class="car-card"><img src="ford.jpg" alt="Car"/><div class="car-info"><div class="car-header"><h3>Ford Escape</h3><span class="car-year">2020</span></div><div class="car-specs"><span><i class="fas fa-users"></i> 5 People</span><span><i class="fas fa-bolt"></i> Electric</span><span><i class="fas fa-cogs"></i> Automatic</span></div><hr/><div class="car-footer"><span class="price">$470/month</span><button class="btn-secondary">Rent now</button></div><button class="heart-btn"><i class="fas fa-heart"></i></button></div></div>
+    <div class="car-card"><img src="chevy.avif" alt="Car"/><div class="car-info"><div class="car-header"><h3>Chevy Malibu</h3><span class="car-year">2019</span></div><div class="car-specs"><span><i class="fas fa-users"></i> 4 People</span><span><i class="fas fa-gas-pump"></i> Gasoline</span><span><i class="fas fa-cogs"></i> Automatic</span></div><hr/><div class="car-footer"><span class="price">$350/month</span><button class="btn-secondary">Rent now</button></div><button class="heart-btn"><i class="fas fa-heart"></i></button></div></div>
+    <div class="car-card"><img src="fusion.avif" alt="Car"/><div class="car-info"><div class="car-header"><h3>Ford fusion</h3><span class="car-year">2022</span></div><div class="car-specs"><span><i class="fas fa-users"></i> 5 People</span><span><i class="fas fa-battery-full"></i> Hybrid</span><span><i class="fas fa-cogs"></i> Automatic</span></div><hr/><div class="car-footer"><span class="price">$750/month</span><button class="btn-secondary">Rent now</button></div><button class="heart-btn"><i class="fas fa-heart"></i></button></div></div>
+    <div class="car-card"><img src="kia.avif" alt="Car"/><div class="car-info"><div class="car-header"><h3>Kia Optima</h3><span class="car-year">2020</span></div><div class="car-specs"><span><i class="fas fa-users"></i> 5 People</span><span><i class="fas fa-gas-pump"></i> Gasoline</span><span><i class="fas fa-cogs"></i> Automatic</span></div><hr/><div class="car-footer"><span class="price">$500/month</span><button class="btn-secondary">Rent now</button></div><button class="heart-btn"><i class="fas fa-heart"></i></button></div></div>
+    <div class="car-card"><img src="jeep.jpg" alt="Car"/><div class="car-info"><div class="car-header"><h3>Jeep Cheroke  </h3><span class="car-year">2023</span></div><div class="car-specs"><span><i class="fas fa-users"></i> 5 People</span><span><i class="fas fa-battery-full"></i> Hybrid</span><span><i class="fas fa-cogs"></i> Automatic</span></div><hr/><div class="car-footer"><span class="price">$650/month</span><button class="btn-secondary">Rent now</button></div><button class="heart-btn"><i class="fas fa-heart"></i></button></div></div>
+    <div class="car-card"><img src="Camry1.jpg" alt="Car"/><div class="car-info"><div class="car-header"><h3>  </h3><span class="car-year">2011</span></div><div class="car-specs"><span><i class="fas fa-users"></i> 5 People</span><span><i class="fas fa-battery-full"></i> Hybrid</span><span><i class="fas fa-cogs"></i> Automatic</span></div><hr/><div class="car-footer"><span class="price">$250/month</span><button class="btn-secondary">Rent now</button></div><button class="heart-btn"><i class="fas fa-heart"></i></button></div></div>
+  </div>
+</section>
+
+
+<section class="reasons">
+  <div class="reasons-header" id="Help">
+    <h2>Four reasons to rent a car in BanTal</h2>
+    <p>We provide you with everything you need for a comfortable and reliable car rental experience—no hidden fees, complete coverage, and support every step of the way.</p>
+  </div>
+
+  <div class="reason-grid">
+    <div class="reason-card">
+      <i class="fas fa-headset"></i>
+      <h3>Support on the Road</h3>
+      <p>24/7 customer service to assist you during your entire journey.</p>
+    </div>
+    <div class="reason-card">
+      <i class="fas fa-dollar-sign"></i>
+      <h3>Affordable Prices</h3>
+      <p>Transparent pricing with no hidden costs or surprise charges.</p>
+    </div>
+    <div class="reason-card">
+      <i class="fas fa-file-signature"></i>
+      <h3>Minimum of Bureaucracy</h3>
+      <p>Quick and simple rental process so you get on the road faster.</p>
+    </div>
+    <div class="reason-card">
+      <i class="fas fa-shield-alt"></i>
+      <h3>Full Insurance</h3>
+      <p>Comprehensive insurance for peace of mind during your trip.</p>
+    </div>
+  </div>
+</section>
+
+
+ <section class="reviews">
+  <h2>Customer Reviews</h2>
+  <div class="slider-container">
+    <button class="arrow left" onclick="moveSlide(-1)">&#10094;</button>
+    <div class="slides" id="reviewSlides">
+      <!-- Slide 1 -->
+      <div class="slide">
+        <p>“Amazing service! The process was seamless.”</p>
+        <div class="reviewer">
+          <img src="matt.jpg" alt="Reviewer">
+          <div>
+            <strong>Matt Jones</strong><br />
+            <span>Sydney, Australia</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide">
+        <p>“Quick and affordable lease transfers. Highly recommend!”</p>
+        <div class="reviewer">
+          <img src="jaskson.jpg" alt="Reviewer">
+          <div>
+            <strong>jaskson Graham</strong><br />
+            <span>New York, USA</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide">
+        <p>“Customer service was exceptional from start to finish.”</p>
+        <div class="reviewer">
+          <img src="linda.jpg" alt="Reviewer">
+          <div>
+            <strong>Linda Chen</strong><br />
+            <span>Toronto, Canada</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="slide">
+        <p>“I was surprised how fast everything was handled.”</p>
+        <div class="reviewer">
+          <img src="ali.jpg" alt="Reviewer">
+          <div>
+            <strong>Ali Hussein</strong><br />
+            <span>Dubai, UAE</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="slide">
+        <p>“Top-quality cars and very reliable service.”</p>
+        <div class="reviewer">
+          <img src="chole.jpg" alt="Reviewer">
+          <div>
+            <strong>Chloe Walker</strong><br />
+            <span>London, UK</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 6 -->
+      <div class="slide">
+        <p>“Everything was exactly as described. 10/10.”</p>
+        <div class="reviewer">
+          <img src="ella.jpg" alt="Reviewer">
+          <div>
+            <strong>Ella Carlos</strong><br />
+            <span>Madrid, Spain</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="arrow right" onclick="moveSlide(1)">&#10095;</button>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-content">
+    <!-- Left: BanTal with write-up -->
+    <div class="footer-left">
+      <h3>BanTal</h3>
+      <p>Your trusted partner in car rentals and leasing.</p>
+    </div>
+
+    <!-- Center: Address -->
+    <div class="footer-center">
+      <h4>Our Office</h4>
+      <p>123 Auto Avenue,<br>Motor City, NY 10001<br>USA</p>
+    </div>
+
+    <!-- Right: Social links -->
+<div class="footer-right">
+  <h4>Connect with us</h4>
+  <a href="https://www.instagram.com/bangistech/" target="_blank">
+    <i class="fab fa-instagram"></i> Instagram
+  </a><br>
+  <a href="https://www.linkedin.com/in/babangida-musa-9a813a355/" target="_blank">
+    <i class="fab fa-linkedin"></i> LinkedIn
+  </a>
+</div>
+
+  </div>
+
+  <!-- Bottom text -->
+  <div class="footer-bottom">
+    ©2025 Bangis Tech.com All rights reserved
+  </div>
+</footer>
+
+</body>
+<script>
+  document.querySelectorAll('.heart-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.classList.toggle('liked');
+    });
+  });
+  const hamburger = document.getElementById("hamburger");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  hamburger.addEventListener("click", () => {
+    mobileMenu.classList.toggle("show");
+  });
+  let currentIndex = 0;
+  const slides = document.querySelector("#reviewSlides");
+  const totalSlides = slides.children.length;
+
+  function moveSlide(direction) {
+    currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+</script>
+
+</html>
